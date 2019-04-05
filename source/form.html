@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="styleseet">
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Магазин Mishka" width="86" height="35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="menu-list__item">
+              <a>Вязание на заказ</a>
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__image menu-list__image--search"></span>
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__image menu-list__image--basket"></span>
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form class="form-order" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="form-order__type">
+          <legend>тип</legend>
+          <label for="interior-accessories">
+              <input type="radio" name="type" id="interior-accessories" value="interior-accessories" checked>Аксессуар для интерьера
+          </label>
+          <label for="children-toy">
+              <input type="radio" name="type" id="children-toy" value="children-toy">Детская игрушка
+          </label>
+        </fieldset>
+        <fieldset class="form-order__color">
+          <legend>цвет</legend>
+          <label for="white">
+            <input type="checkbox" name="color-white" id="white" checked>
+          Белый</label>
+          <label for="grey">
+            <input type="checkbox" name="color-grey" id="grey" checked>
+          Серый</label>
+          <label for="tiffani">
+            <input type="checkbox" name="color-tiffani" id="tiffani">
+          «Тиффани»</label>
+          <label for="black">
+            <input type="checkbox" name="color-black" id="black">
+          Черный</label>
+          <label for="pink">
+            <input type="checkbox" name="color-pink" id="pink">
+          Розовый</label>
+          <label for="orange">
+            <input type="checkbox" name="color-orange" id="orange">
+          Оранжевый</label>
+        </fieldset>
+        <fieldset class="form-order__full-name">
+          <legend>ФИО</legend>
+          <label for="user-name">Имя:
+            <input type="text" id="user-name" name="name" placeholder="Введите ваше имя*">
+          </label>
+          <label for="user-surname">Фамилия:
+            <input type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*">
+          </label>
+          <label for="user-middle-name">Отчество:
+            <input type="text" id="user-middle-name" name="middle-name" placeholder="Отчество, если желаете">
+          </label>
+        </fieldset>
+        <fieldset class="form-order__phone">
+          <legend>тел</legend>
+          <label>
+            <input type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          </label>
+        </fieldset>
+        <fieldset class="form-order__mail">
+          <legend>e-mail</legend>
+          <input type="email" name="e-mail" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset class="form-order__comments">
+          <legend>доп</legend>
+          <label for="comment-field">
+            <textarea name="comment" id="comment-field" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </fieldset>
+        <p class="form-order__text">*Поля обязательны для заполнения</p>
+        <input class="form-order__button button" type="submit" value="отправить заказ">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Магазин" width="86" height="35">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>

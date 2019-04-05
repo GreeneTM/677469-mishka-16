@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="styleseet">
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Магазин Mishka" width="86" height="35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a>Каталог товаров</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__image menu-list__image--search"></span>
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__image menu-list__image--basket"></span>
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="catalog">
+      <h1 class="visually-hidden">Mishka Интернет-магазин игрушек ручной работы</h1>
+      <header class="catalog__header">Каталог товаров</header>
+      <section class="cards__product">
+        <ul class="cards__list">
+          <li class="cards__item card">
+            <img class="cards__image" src="http://placehold.it/260x195">
+            <h2 class="cards__subtitle">Зайчик-попрыгайчик</h2>
+            <span class="cards__desc">Рост 30 см, вес 200 г</span>
+            <span class="cards__price">1 200 руб.</span>
+            <span class="cards__icon"></span>
+          </li>
+          <li class="cards__item card">
+            <img class="cards__image" src="http://placehold.it/260x195">
+            <h2 class="cards__subtitle">Корзинка для белья</h2>
+            <span class="cards__desc">Диаметр 15 см, высота 10 см</span>
+            <span class="cards__price">690 руб.</span>
+            <span class="cards__icon"></span>
+          </li>
+          <li class="cards__item card">
+            <img class="cards__image" src="http://placehold.it/260x195">
+            <h2 class="cards__subtitle">Большая корзинка для игрушек</h2>
+            <span class="cards__desc">Диаметр 30 см, высота 30 см</span>
+            <span class="cards__price">1 500 руб.</span>
+            <span class="cards__icon"></span>
+          </li>
+        </ul>
+      </section>
+      <section class="promo">
+        <span class="icon promo__icon"></span>
+        <h2>Процесс производства</h2>
+        <video src="http://placehold.it/260x150"></video>
+        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="button promo__button">Сделать заказ</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Магазин Mishka" width="86" height="35">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
