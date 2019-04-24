@@ -37,11 +37,33 @@
     grid-row-end: 3;
     display: flex;
   }
+
   .main-nav__list {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav {
+    grid-template-columns: 475px 200px 475px;
+    grid-template-rows: 88px 88px;
+    width: 1150px;
+  }
+
+  .main-nav__list {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .main-nav__list-stock {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
