@@ -8,13 +8,11 @@
 .tagline__wrapper {
   margin: 0 auto;
   width: 245px;
-  outline: 1px solid tomato;
   padding: 93px 40px 193px 40px;
   text-align: center;
 }
 
 .tagline__title {
-  outline: 1px solid green;
   width: 240px;
 }
 
@@ -31,4 +29,20 @@
   background-color: greenyellow;
   width: 320px;
   height: 100px;
+}
+
+@media (min-width: 772px) {
+  .tagline__wrapper {
+    width: 772px;
+  }
+
+  .tagline__title {
+    margin: 0 auto;
+    width: 495px;
+  }
+
+  .tagline__list {
+    flex-direction: row;
+    margin-top: 370px;
+  }
 }

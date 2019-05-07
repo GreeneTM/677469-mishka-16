@@ -1,11 +1,11 @@
 .product {
   display: flex;
   flex-direction: column;
-  height: 820px;
   width: 322px;
   outline: 1px solid orange;
   padding: 0;
   margin: 0 auto;
+  background-color: transition;
 }
 
 .product__subtitle {
@@ -47,4 +47,45 @@
 .product__price {
   margin: 0 auto;
   margin-top: 29px;
+}
+
+.product__button {
+  margin: 0 auto;
+}
+
+@media (min-width: 772px) {
+  .product {
+    position: relative;
+    width: 772px;
+  }
+
+  .product__wrapper-title {
+    display: flex;
+  }
+
+  .product__title {
+    width: 70px;
+    margin-top: 47px;
+    margin-left: 150px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .product__subtitle {
+    margin-top: 43px;
+  }
+
+  .product__image {
+    position: absolute;
+    right: 80px;
+    z-index: 0;
+  }
+
+  .product__price {
+    margin-left: 30px;
+  }
+
+  .product__button {
+    margin-left: 30px;
+  }
 }
